@@ -54,6 +54,11 @@ For the NER model, I chose bert-base-uncased due to its strong generalization ca
 
 Instead of training the model solely on animal tokens, I expanded the training dataset to include 15 different token classes. This approach enhanced the model's flexibility and improved its performance on animal token recognition by providing broader context and reducing overfitting. As a result, the NER model demonstrated greater accuracy and adaptability to various text inputs.
 
+## Result
+This is result from `workflow.ipynb`, You can see it at the end of the notebook.
+
+<img src="output.png"></img>
+
 ## Navigate
 
 
