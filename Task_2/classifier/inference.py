@@ -8,8 +8,8 @@ try:
 except ImportError:
     from train import transform, DEVICE, model, class_names
 
-model = model.to('cuda')
-model.load_state_dict(torch.load("./classifier/best_model.pt"))
+model = model.to(DEVICE)
+model.load_state_dict(torch.load("./classifier/best_model.pt", map_location=torch.device(DEVICE)))
 
 def run_inference(image):
     input_tensor = transform(image).unsqueeze(0)
